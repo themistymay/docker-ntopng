@@ -3,4 +3,4 @@ set -e
 
 /etc/init.d/redis-server start
 
-exec /usr/local/bin/ntopng -d /data/ntop "$@"
+exec /usr/local/bin/ntopng -F db -d /data/ntop "$@"
